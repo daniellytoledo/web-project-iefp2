@@ -22,12 +22,28 @@ a {
 
 #banner {
     width: 100%;
+    display: block;
 }
 
-#menu {
+#maincontent {
+    display: flex;
+    flex-wrap: nowrap; /* manter a div posicionada sem ser flexível */
+    justify-content: space-evenly; /* calcula automaticamente os espaços entre as divs dentro pra ficar igual os espaçamentos */
+}
+
+#content {
+    background-color: #FED512;
+    width: 70%;
+    margin: 10px;
+}
+
+#lateral {
+    background-color: #FED512;
     width: 25%;
-    height: 30px;
-    background-color: #c2ab2b;
-    margin-left: 45%;
+    margin: 10px;
 }
 
+#footer {
+    background-color: #101b0f;
+    color: white;
+}
