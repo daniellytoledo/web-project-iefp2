@@ -25,25 +25,49 @@ a {
     display: block;
 }
 
-#maincontent {
+main {
     display: flex;
     flex-wrap: nowrap; /* manter a div posicionada sem ser flexível */
     justify-content: space-evenly; /* calcula automaticamente os espaços entre as divs dentro pra ficar igual os espaçamentos */
+    padding: 10px; /* o padding serve pra colocar margens ao redor da div, às vezes funciona melhor que o margin porque o margin pode não ficar distribuído igualmente ao redor */
 }
 
 #content {
     background-color: #FED512;
     width: 70%;
-    margin: 10px;
+    border-radius: 5px;
 }
 
 #lateral {
     background-color: #FED512;
     width: 25%;
-    margin: 10px;
+    border-radius: 5px;
 }
 
-#footer {
+footer {
     background-color: #101b0f;
     color: white;
+}
+
+nav {
+    background-color: orange;
+    width: 65%;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    flex-wrap: nowrap;
+    margin-left: 265px;
+}
+
+a {
+    color: #495688; /* Mude para a cor que você preferir */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* opcional: deixa em negrito */
+    transition: color 0.3s ease; /* transição suave para mudança de cor */
+}
+
+a:hover {
+    color: #FED512; /* Muda cor no hover (opcional) */
 }
