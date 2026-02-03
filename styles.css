@@ -81,10 +81,8 @@ nav a:hover {
 }
 
 section {
-    background-color: rgb(255, 251, 36);
     border-radius: 5px;
     width: 95%;
-    display: flex;
     flex-wrap: nowrap;
     margin-top: 20px;
     margin-bottom: 20px;
