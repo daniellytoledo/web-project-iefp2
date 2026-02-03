@@ -28,46 +28,69 @@ a {
 main {
     display: flex;
     flex-wrap: nowrap; /* manter a div posicionada sem ser flexível */
-    justify-content: space-evenly; /* calcula automaticamente os espaços entre as divs dentro pra ficar igual os espaçamentos */
+    justify-content: space-between; /* calcula automaticamente os espaços entre as divs dentro pra ficar igual os espaçamentos */
     padding: 10px; /* o padding serve pra colocar margens ao redor da div, às vezes funciona melhor que o margin porque o margin pode não ficar distribuído igualmente ao redor */
 }
 
 #content {
-    background-color: #FED512;
+    background-color: #6D7C60;
     width: 70%;
-    border-radius: 5px;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: center;
 }
 
 #lateral {
-    background-color: #FED512;
+    background-color: #6D7C60;
     width: 25%;
-    border-radius: 5px;
+    border-radius: 7px;
+    padding: 10px;
 }
 
 footer {
-    background-color: #101b0f;
+    background-color: #34306A;
     color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Para textos dentro, se houver */
 }
 
 nav {
-    background-color: orange;
+    background-color: rgb(255, 251, 36);
     width: 65%;
     height: 40px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-evenly;
+    margin-top: 20px;
+    float: right; /* ajuda a div a ficar flutuando ao invés de configurar margens fixas */
+    border-radius: 7px;
     padding: 10px;
-    flex-wrap: nowrap;
-    margin-left: 265px;
 }
 
-a {
+nav a {
     color: #495688; /* Mude para a cor que você preferir */
     text-decoration: none; /* Remove o sublinhado */
     font-weight: bold; /* opcional: deixa em negrito */
     transition: color 0.3s ease; /* transição suave para mudança de cor */
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
-a:hover {
-    color: #FED512; /* Muda cor no hover (opcional) */
+nav a:hover {
+    color: #6D7C60; /* Muda cor no hover (opcional) */
 }
+
+section {
+    background-color: rgb(255, 251, 36);
+    border-radius: 5px;
+    width: 95%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#texto {
+    display: block;
+}
+
