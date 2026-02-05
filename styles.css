@@ -34,7 +34,7 @@ main {
 
 #content {
     background-color: #6D7C60;
-    width: 70%;
+    width: 74%;
     border-radius: 7px;
     padding: 10px;
     text-align: center;
@@ -47,9 +47,17 @@ main {
     padding: 10px;
 }
 
+#lateral h1 {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+#lateral h2 {
+    font-size: 1.2rem;
+}
+
 footer {
-    background-color: #34306A;
-    color: white;
+    background-color: #FFFB24;
     height: 50px;
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
@@ -74,10 +82,15 @@ nav a {
     transition: color 0.3s ease; /* transição suave para mudança de cor */
     margin-left: 5px;
     margin-right: 5px;
+    /* font-variant: small-caps; pra deixar a font em maiúscula, porém pequenas */
 }
 
 nav a:hover {
     color: #6D7C60; /* Muda cor no hover (opcional) */
+}
+
+nav a:visited {
+    color: #1F3760;
 }
 
 section {
@@ -92,3 +105,22 @@ section {
     display: block;
 }
 
+#destaques {
+    background-color: #FFFB24;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 10px;
+}
+
+.artistas {
+    background-color: #732724;
+    width: 22%;
+    border: 2px solid #495688;
+}
+
+.artistas img {
+    height: auto;
+    width: 100%;
+}
